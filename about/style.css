@@ -104,7 +104,7 @@ html {
 
 .home {
   display: flex;
-  background: url("images/banner5.jpg") no-repeat center; /* TODO:CHANGE BACKGROUND IMAGE */
+  background: url("images/banner1.jpg") no-repeat center; /* TODO:CHANGE BACKGROUND IMAGE */
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
