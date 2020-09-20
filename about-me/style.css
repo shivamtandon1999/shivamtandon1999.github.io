@@ -237,6 +237,17 @@ section .title::after {
   color: crimson;
 }
 
+.about .about-content .quote p {
+  border: 5px solid crimson;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .about .about-content .right p {
   text-align: justify;
 }
@@ -321,33 +332,18 @@ section .title::after {
 }
 
 .skills .skills-content .column {
-  width: calc(50% - 30px);
+  width: 100%;
 }
 
-.skills .skills-content .left .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.skills .skills-content .left p {
-  text-align: justify;
-}
-.skills .skills-content .left a {
-  display: inline-block;
-  background: crimson;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 8px;
-  border: 2px solid crimson;
-  transition: all 0.3s ease;
-}
-
-.skills .skills-content .left a:hover {
-  color: crimson;
-  background: none;
+.skills .skills-content p {
+  border: 5px solid crimson;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .skills .skills-content .right .bars {
@@ -467,6 +463,10 @@ section .title::after {
   margin: 10px 0 7px 0;
 }
 
+.projects .carousel .card .box p {
+  text-align: center;
+}
+
 .projects .carousel .card img {
   height: 150px;
   width: 150px;
@@ -518,10 +518,6 @@ section .title::after {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-}
-
-.contact .contact-content .left p {
-  text-align: justify;
 }
 
 .contact .contact-content .left .icons {

@@ -61,6 +61,12 @@
       <div class="max-width">
         <h2 class="title">About Me</h2>
         <div class="about-content">
+          <div class="quote">
+            <p>
+              "If you cannot grok the overall structure of a program while
+              taking a shower, you are not ready to code it."
+            </p>
+          </div>
           <div class="column left">
             <img src="images/banner.jpg" alt="" />
             <!-- TODO:CHANGE MY PHOTO -->
@@ -70,10 +76,6 @@
               I'm Shivam and I'm a <span class="typing-2"></span>
             </div>
             <p>
-              "If you cannot grok the overall structure of a program while
-              taking a shower, you are not ready to code it."
-              <br />
-              <br />
               I'm persuing Bachelor of Technology degree in Computer Science and
               Engineering from Ambalika Institute of Management and Technology,
               Lucknow.
@@ -136,16 +138,12 @@
     <!-- my skills section starts -->
     <section class="skills" id="skills">
       <div class="max-width">
-        <h2 class="title">My Skills</h2>
+        <h2 class="title">My Skillset</h2>
         <div class="skills-content">
-          <div class="column left">
-            <div class="text">My Skills & Experiences</div>
-            <p>
-              "Sometimes it pays to stay in bed on Monday, rather than spending
-              the rest of the week debugging Monday’s code."
-            </p>
-            <a href="#">Read more</a>
-          </div>
+          <p>
+            "Write good code, get paid in bed on Monday, rather than spending
+            the rest of the week debugging Monday’s code."
+          </p>
           <div class="column right">
             <div class="bars">
               <div class="info">
@@ -262,16 +260,19 @@
     <!-- my projects section starts -->
     <section class="projects" id="projects">
       <div class="max-width">
-        <h2 class="title">My Projects</h2>
+        <h2 class="title">Recent Projects</h2>
         <div class="carousel owl-carousel">
           <div class="card">
             <div class="box">
               <img src="images/banner2.jpg" alt="" />
               <!-- TODO:ADD PROJECT PHTOS -->
-              <div class="text">Project Name</div>
+              <div class="text">CryptPass</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                magni, omnis incidunt accusamus ab ducimus?
+                This is an android password manager application developed using
+                flutter.
+                <br />
+                <br />
+                Click to know more !
               </p>
             </div>
           </div>
@@ -279,10 +280,13 @@
             <div class="box">
               <img src="images/banner2.jpg" alt="" />
               <!-- TODO:ADD PROJECT PHTOS -->
-              <div class="text">Project Name</div>
+              <div class="text">EduCam</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                magni, omnis incidunt accusamus ab ducimus?
+                This is an android video conferencing application for
+                educational institutions.
+                <br />
+                <br />
+                Click to know more !
               </p>
             </div>
           </div>
@@ -290,10 +294,13 @@
             <div class="box">
               <img src="images/banner2.jpg" alt="" />
               <!-- TODO:ADD PROJECT PHTOS -->
-              <div class="text">Project Name</div>
+              <div class="text">Wild Cage</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                magni, omnis incidunt accusamus ab ducimus?
+                This is IoT enabled automated cage for capturing wild animals in
+                the jungle.
+                <br />
+                <br />
+                Click to know more !
               </p>
             </div>
           </div>
@@ -301,10 +308,13 @@
             <div class="box">
               <img src="images/banner2.jpg" alt="" />
               <!-- TODO:ADD PROJECT PHTOS -->
-              <div class="text">Project Name</div>
+              <div class="text">Dudhwa Safari</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                magni, omnis incidunt accusamus ab ducimus?
+                This is an android application developed for Dudhwa National
+                Park, India.
+                <br />
+                <br />
+                Click to know more !
               </p>
             </div>
           </div>
@@ -312,10 +322,13 @@
             <div class="box">
               <img src="images/banner2.jpg" alt="" />
               <!-- TODO:ADD PROJECT PHTOS -->
-              <div class="text">Project Name</div>
+              <div class="text">I-Control</div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                magni, omnis incidunt accusamus ab ducimus?
+                This is an andoid application for home automation, developed
+                using flutter.
+                <br />
+                <br />
+                Click to know more !
               </p>
             </div>
           </div>
@@ -331,11 +344,7 @@
         <div class="contact-content">
           <div class="column left">
             <div class="text">Get in Touch</div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
-              expedita ipsum quos fuga exercitationem facilis, in saepe
-              recusandae debitis! Quis.
-            </p>
+
             <div class="icons">
               <div class="row">
                 <i class="fas fa-user"></i>
@@ -356,27 +365,42 @@
           </div>
           <div class="column right">
             <div class="text">Contact Me</div>
-            <form action="#">
+            <form
+              action="mailto:shivamtandon2012@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
               <div class="fields">
                 <div class="field name">
-                  <input type="text" placeholder="Name" required />
+                  <input type="text" placeholder="Name" name="Name" required />
                 </div>
                 <div class="field email">
-                  <input type="email" placeholder="Email" required />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="Email"
+                    required
+                  />
                 </div>
               </div>
               <div class="field">
-                <input type="text" placeholder="Subject" required />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  name="Subjext"
+                  required
+                />
               </div>
               <div class="field textarea">
                 <textarea
                   cols="30"
                   rows="10"
                   placeholder="Enter message..."
+                  name="textarea"
                   required
                 ></textarea>
                 <div class="button">
-                  <button type="submit">Send Message</button>
+                  <button type="submit" value="Send">Send Message</button>
                 </div>
               </div>
             </form>
