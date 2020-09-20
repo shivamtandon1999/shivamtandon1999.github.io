@@ -725,4 +725,8 @@ section .title::after {
   .home .home-content .text-3 {
     font-size: 27px;
   }
+
+  .services .title::after {
+    font-size: 15px;
+  }
 }
