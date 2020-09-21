@@ -369,6 +369,7 @@
               action="mailto:shivamtandon2012@gmail.com"
               method="post"
               enctype="text/plain"
+              id="form"
             >
               <div class="fields">
                 <div class="field name">
@@ -377,7 +378,7 @@
                 <div class="field email">
                   <input
                     type="email"
-                    placeholder="Email"
+                    placeholder="Your Email"
                     name="Email"
                     required
                   />
@@ -387,7 +388,8 @@
                 <input
                   type="text"
                   placeholder="Subject"
-                  name="Subjext"
+                  name="Subject"
+                  id="subject"
                   required
                 />
               </div>
@@ -397,10 +399,13 @@
                   rows="10"
                   placeholder="Enter message..."
                   name="textarea"
+                  id="body"
                   required
                 ></textarea>
                 <div class="button">
-                  <button type="submit" value="Send">Send Message</button>
+                  <button type="submit" value="Send" id="send_btn">
+                    Send Message
+                  </button>
                 </div>
               </div>
             </form>

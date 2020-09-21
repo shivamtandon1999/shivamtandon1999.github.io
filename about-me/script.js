@@ -48,6 +48,17 @@ $(document).ready(function () {
     loop: true,
   });
 
+  $("#send_btn").click(function () {
+    $("#form").attr(
+      "action",
+      "mailto:shivamtandon2012@gmail.com?subject=" +
+        $("#subject").val() +
+        "&body=" +
+        $("#body").val()
+    );
+    $("#form").submit();
+  });
+
   //owl carousel script
   $(".carousel").owlCarousel({
     margin: 20,
