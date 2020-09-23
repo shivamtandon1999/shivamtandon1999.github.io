@@ -470,7 +470,7 @@ section .title::after {
 .projects .carousel .card img {
   height: 150px;
   width: 150px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
   border: 5px solid crimson;
 }
@@ -727,5 +727,17 @@ section .title::after {
   }
   .services .title::after {
     font-size: 15px;
+  }
+
+  @media (max-width: 315px) {
+    .services .title::after {
+      font-size: 12px;
+    }
+    .services .title {
+      font-size: 30px;
+    }
+    .about .max-width .about-content .right a span {
+      font-size: 15px;
+    }
   }
 }
