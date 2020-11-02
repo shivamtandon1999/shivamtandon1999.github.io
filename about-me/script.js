@@ -52,7 +52,6 @@ $(document).ready(function () {
   $("#send_btn").click(function () {
     $("#form").attr(
       "action",
-      "target=_top",
       "mailto:shivamtandon2012@gmail.com?subject=" +
         $("#subject").val() +
         "&body=" +
