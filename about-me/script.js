@@ -10,6 +10,7 @@ $(document).ready(function () {
     // scroll-up button show/hide script
     if (this.scrollY > 200) {
       $(".scroll-up-btn").addClass("show");
+      $(".about").click();
     } else {
       $(".scroll-up-btn").removeClass("show");
     }
@@ -51,6 +52,7 @@ $(document).ready(function () {
   $("#send_btn").click(function () {
     $("#form").attr(
       "action",
+      "target=”_blank",
       "mailto:shivamtandon2012@gmail.com?subject=" +
         $("#subject").val() +
         "&body=" +
