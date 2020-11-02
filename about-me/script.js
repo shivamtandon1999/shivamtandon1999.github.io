@@ -49,10 +49,10 @@ $(document).ready(function () {
     loop: true,
   });
 
+ 
   $("#send_btn").click(function () {
     $("#form").attr(
       "action",
-      
       "mailto:shivamtandon2012@gmail.com?subject=" +
         $("#subject").val() +
         "&body=" +
