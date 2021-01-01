@@ -194,6 +194,7 @@ section .title::after {
 .services,
 .skills,
 .projects,
+.internships,
 .contact {
   font-family: "Poppins", sans-serif;
 }
@@ -272,12 +273,14 @@ section .title::after {
 /* my Domain/Services section styling */
 
 .services,
-.projects {
+.projects,
+.internships {
   color: #fff;
   background: #111;
 }
 .services .title::before,
-.projects .title::before {
+.projects .title::before,
+.internships .title::before {
   width: 200px;
   background: #fff;
 }
@@ -285,6 +288,12 @@ section .title::after {
 .projects .title::after {
   background: #111;
   content: "My skill domains";
+}
+
+.internships .title::after
+{
+  background: #111;
+  content: "Experiences";
 }
 
 .services .serv-content .card {
@@ -379,22 +388,22 @@ section .title::after {
 }
 
 .skills .skills-content .right .java::before {
-  width: 95%;
-}
-.skills .skills-content .right .android::before {
-  width: 85%;
-}
-.skills .skills-content .right .dart::before {
   width: 90%;
 }
-.skills .skills-content .right .flutter::before {
+.skills .skills-content .right .android::before {
+  width: 60%;
+}
+.skills .skills-content .right .dart::before {
   width: 80%;
 }
+.skills .skills-content .right .flutter::before {
+  width: 65%;
+}
 .skills .skills-content .right .swift::before {
-  width: 50%;
+  width: 0;
 }
 .skills .skills-content .right .mysql::before {
-  width: 75%;
+  width: 50%;
 }
 .skills .skills-content .right .python::before {
   width: 50%;
@@ -409,43 +418,49 @@ section .title::after {
   width: 95%;
 }
 .skills .skills-content .right .html::before {
-  width: 80%;
-}
-.skills .skills-content .right .css::before {
-  width: 65%;
-}
-.skills .skills-content .right .javascript::before {
   width: 60%;
 }
-.skills .skills-content .right .php::before {
+.skills .skills-content .right .css::before {
   width: 50%;
 }
+.skills .skills-content .right .javascript::before {
+  width: 40%;
+}
+.skills .skills-content .right .php::before {
+  width: 40%;
+}
 .skills .skills-content .right .reactjs::before {
-  width: 45%;
+  width: 0%;
 }
 
 /* my projects section styling */
 
-.projects .title::before {
+
+.projects .title::before,
+.internships .title::before {
   width: 210px;
 }
 
-.projects .title::after {
+.projects .title::after,
+.internships .title::after {
   content: "Experiences";
 }
 
-.projects .carousel .card {
+.projects .carousel .card,
+.internships .card {
   background: #222;
   border-radius: 6px;
   padding: 25px 35px;
   transition: all 0.3s ease;
 }
 
-.projects .carousel .card:hover {
+.projects .carousel .card:hover,
+.internships .card:hover{
   background: crimson;
 }
 
-.projects .carousel .card .box {
+.projects .carousel .card .box,
+.internships .card .box{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -453,21 +468,27 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.projects .carousel .card:hover .box {
+.projects .carousel .card:hover .box,
+.internships .card:hover .box{
   transform: scale(1.05);
 }
 
-.projects .carousel .card .text {
+.projects .carousel .card .text,
+.internships .card .text{
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
 
-.projects .carousel .card .box p {
+.projects .carousel .card .box p,
+.internships .card .box p{
   text-align: center;
 }
 
-.projects .carousel .card img {
+
+
+.projects .carousel .card img,
+.internships .card img{
   height: 150px;
   width: 150px;
   object-fit: contain;
@@ -475,7 +496,8 @@ section .title::after {
   border: 5px solid crimson;
 }
 
-.projects .carousel .card:hover img {
+.projects .carousel .card:hover img,
+.internships .card:hover img{
   border-color: #fff;
   transition: all 0.3s ease;
 }
@@ -609,12 +631,25 @@ section .title::after {
   color: crimson;
   background: none;
 }
+@media (max-width: 2000px) {
+  
+  .internships .card
+{
+  margin: auto;
+  width: 30vw;
+}
+}
 
 /* Responsive media query start */
 @media (max-width: 1300px) {
   .home .max-width {
     margin-left: 0px;
   }
+  .internships .card
+{
+  margin: auto;
+  width: 30vw;
+}
 }
 
 @media (max-width: 1104px) {
@@ -622,14 +657,29 @@ section .title::after {
     height: 350px;
     width: 350px;
   }
+  .internships .card
+{
+  margin: auto;
+  width: 30vw;
+}
 }
 
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
   }
+  .internships .card
+{
+  margin: auto;
+  width: 50vw;
+}
 }
 @media (max-width: 947px) {
+  .internships .card
+{
+  margin: auto;
+  width: 50vw;
+}
   .menu-btn {
     display: block;
     z-index: 999;
@@ -701,6 +751,11 @@ section .title::after {
 }
 
 @media (max-width: 690px) {
+  .internships .card
+{
+  margin: auto;
+  width: 70vw;
+}
   .max-width {
     padding: 0 23px;
   }
@@ -728,6 +783,11 @@ section .title::after {
   .services .title::after {
     font-size: 15px;
   }
+  internships .card
+{
+  margin: auto;
+  width: 85vw;
+}
 
   @media (max-width: 315px) {
     .services .title::after {
