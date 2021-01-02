@@ -668,18 +668,28 @@ section .title::after {
   .max-width {
     padding: 0 50px;
   }
+
+  .projects .title
+  {
+    margin-top: -50px;
+  }
   .internships .card
 {
-  margin: auto;
+  margin-bottom: 50px;
   width: 50vw;
 }
 }
 @media (max-width: 947px) {
   .internships .card
 {
-  margin: auto;
+  margin-bottom: 50px;
   width: 50vw;
 }
+.projects .title
+  {
+    margin-top: -50px;
+  }
+
   .menu-btn {
     display: block;
     z-index: 999;
@@ -753,7 +763,7 @@ section .title::after {
 @media (max-width: 690px) {
   .internships .card
 {
-  margin: auto;
+  margin-bottom: 50px;
   width: 70vw;
 }
   .max-width {
@@ -783,13 +793,19 @@ section .title::after {
   .services .title::after {
     font-size: 15px;
   }
-  internships .card
+  .internships .card
 {
-  margin: auto;
-  width: 85vw;
+  margin-bottom: 50px;
+  width: 100vw;
+}
 }
 
   @media (max-width: 315px) {
+    .internships .card
+    {
+      margin-bottom: 50px;
+      width: 100vw;
+    }
     .services .title::after {
       font-size: 12px;
     }
@@ -800,4 +816,3 @@ section .title::after {
       font-size: 15px;
     }
   }
-}
